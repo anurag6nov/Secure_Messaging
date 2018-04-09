@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#303030">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText12"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:textColor="#FF8756F9"
+            android:textColorHint="#FF8756F9"
+            android:hint="Enter message here"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText14"
+            android:layout_marginTop="73dp"
+            android:layout_below="@+id/editText12"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FF8756F9"
+            android:textColorHint="#FF8756F9"
+            android:hint="Enter key here"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="KEY"
+            android:id="@+id/textView25"
+            android:layout_alignTop="@+id/editText14"
+            android:layout_toStartOf="@+id/editText14"
+            android:layout_marginEnd="42dp"
+            android:textSize="30dp"
+            android:textColor="#FF8756F9" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECRYPT"
+            android:id="@+id/button25"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonClick22"
+            android:textColor="#FF8756F9"
+            android:background="#303030" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView26"
+            android:layout_below="@+id/button25"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="97dp"
+            android:textColor="#FF8756F9"
+            android:hint="Decrypted Text"
+            android:textColorHint="#FF8756F9"/>
+
+    </RelativeLayout>
+</LinearLayout>

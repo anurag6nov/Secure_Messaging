@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="#303030">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/editText6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="47dp"
+            android:textColor="#FF8756F9"
+            android:textColorHint="#FF8756F9"
+            android:hint="Enter message here"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encrypt"
+            android:id="@+id/button9"
+            android:onClick="onButtonClick8"
+            android:layout_above="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:textColor="#FF8756F9"
+            android:background="#303030" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView8"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#FF8756F9" />
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText7"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FF8756F9"
+            android:textColorHint="#FF8756F9"
+            android:hint="Enter key here"/>
+
+        <CheckBox
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/checkBox3"
+            android:layout_below="@+id/editText6"
+            android:layout_toEndOf="@+id/editText7"
+            android:layout_marginTop="68dp"
+            android:checked="false"
+            android:text="Auto"
+            android:background="#303030"
+            android:textColor="#FF8756F9" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Auto key"
+            android:id="@+id/textView9"
+            android:layout_alignTop="@+id/checkBox3"
+            android:layout_toStartOf="@+id/button9"
+            android:textSize="30dp"
+            android:textColor="#FF8756F9" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="Share"
+            android:id="@+id/button15"
+            android:layout_alignTop="@+id/editText7"
+            android:layout_alignStart="@+id/checkBox3"
+            android:textColor="#FF8756F9"
+            android:background="#303030" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/button16"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#303030"
+            android:textColor="#FF8756F9" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#303030">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/editText17"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/editText18"
+            android:layout_marginTop="48dp"
+            android:textColor="#FF8756F9"
+            android:textColorHint="#FF8756F9"
+            android:hint="Eter message here"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Key"
+            android:id="@+id/textView30"
+            android:layout_below="@+id/editText17"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="118dp"
+            android:textSize="40dp"
+            android:textColor="#FF8756F9" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView31"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="92dp"
+            android:textColor="#FF8756F9"
+            android:textColorHint="#FF8756F9"
+            android:hint="Decrypted Text"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText18"
+            android:layout_alignBottom="@+id/textView30"
+            android:layout_alignParentEnd="true"
+            android:textColorHint="#FF8756F9"
+            android:textColor="#FF8756F9"
+            android:hint="Enter key here"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrypt"
+            android:id="@+id/button27"
+            android:layout_above="@+id/textView31"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:onClick="onButtonClick30"
+            android:textColor="#FF8756F9"
+            android:background="#303030" />
+
+    </RelativeLayout>
+</LinearLayout>

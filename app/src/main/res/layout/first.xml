@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#303030">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Secure Encrypted System"
+        android:id="@+id/textView32"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FF8756F9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which operation would you like to perform"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView32"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textColor="#FF8756F9"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryption"
+        android:id="@+id/button28"
+        android:layout_below="@+id/textView33"
+        android:layout_marginTop="82dp"
+        android:textColor="#FF8756F9"
+        android:background="#303030"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_alignEnd="@+id/textView33"
+        android:textSize="20dp"
+        android:onClick="onButtonClick100" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decryption"
+        android:id="@+id/button29"
+        android:layout_below="@+id/button28"
+        android:layout_alignStart="@+id/button28"
+        android:layout_marginTop="94dp"
+        android:textColor="#FF8756F9"
+        android:background="#303030"
+        android:layout_alignEnd="@+id/button28"
+        android:textSize="20dp"
+        android:onClick="onButtonClick19" />
+</RelativeLayout>
